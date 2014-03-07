@@ -1,0 +1,60 @@
+RewriteEngine On
+RewriteRule index.html$ index.php [L]
+RewriteRule ^([^-]+).html$ /?p=$1 [L]
+
+RewriteCond %{HTTP_HOST} ^www.zarabiajnaperfumachfm.pl
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/$1 [R=301,L] 
+RewriteCond %{HTTP_HOST} ^www.zarabiajnaperfumachfm.pl/ofirmie.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/ofirmie.html [R=301,L] 
+RewriteCond %{HTTP_HOST} ^www.zarabiajnaperfumachfm.pl/jakzarabiac.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/jakzarabiac.html [R=301,L] 
+RewriteCond %{HTTP_HOST} ^www.zarabiajnaperfumachfm.pl/korzysci.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/korzysci.html [R=301,L] 
+RewriteCond %{HTTP_HOST} ^www.zarabiajnaperfumachfm.pl/startery.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/startery.html [R=301,L] 
+RewriteCond %{HTTP_HOST} ^www.zarabiajnaperfumachfm.pl/perfumy.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/perfumy.html [R=301,L] 
+RewriteCond %{HTTP_HOST} ^www.zarabiajnaperfumachfm.pl/filmy.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/filmy.html [R=301,L] 
+RewriteCond %{HTTP_HOST} ^www.zarabiajnaperfumachfm.pl/praca.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/praca.html [R=301,L] 
+RewriteCond %{HTTP_HOST} ^www.zarabiajnaperfumachfm.pl/rejestracja.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/rejestracja.html [R=301,L] 
+RewriteCond %{HTTP_HOST} ^www.zarabiajnaperfumachfm.pl/regulamin.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/regulamin.html [R=301,L] 
+RewriteCond %{HTTP_HOST} ^www.zarabiajnaperfumachfm.pl/kontakt.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/kontakt.html [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.zarabiajnaperfumachfm.pl/jakzarabiac.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/jakzarabiac.html [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.zarabiajnaperfumachfm.pl/solaria.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/solaria.html [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.zarabiajnaperfumachfm.pl/katalogi.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/katalogi.html [R=301,L]
+RewriteCond %{HTTP_HOST} ^zarabiajnaperfumachfm.pl
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/$1 [R=301,L] 
+RewriteCond %{HTTP_HOST} ^zarabiajnaperfumachfm.pl/ofirmie.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/ofirmie.html [R=301,L] 
+RewriteCond %{HTTP_HOST} ^zarabiajnaperfumachfm.pl/jakzarabiac.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/jakzarabiac.html [R=301,L] 
+RewriteCond %{HTTP_HOST} ^zarabiajnaperfumachfm.pl/korzysci.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/korzysci.html [R=301,L] 
+RewriteCond %{HTTP_HOST} ^zarabiajnaperfumachfm.pl/startery.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/startery.html [R=301,L] 
+RewriteCond %{HTTP_HOST} ^zarabiajnaperfumachfm.pl/perfumy.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/perfumy.html [R=301,L] 
+RewriteCond %{HTTP_HOST} ^zarabiajnaperfumachfm.pl/filmy.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/filmy.html [R=301,L] 
+RewriteCond %{HTTP_HOST} ^zarabiajnaperfumachfm.pl/praca.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/praca.html [R=301,L] 
+RewriteCond %{HTTP_HOST} ^zarabiajnaperfumachfm.pl/rejestracja.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/rejestracja.html [R=301,L] 
+RewriteCond %{HTTP_HOST} ^zarabiajnaperfumachfm.pl/regulamin.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/regulamin.html [R=301,L] 
+RewriteCond %{HTTP_HOST} ^zarabiajnaperfumachfm.pl/kontakt.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/kontakt.html [R=301,L]
+RewriteCond %{HTTP_HOST} ^zarabiajnaperfumachfm.pl/jakzarabiac.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/jakzarabiac.html [R=301,L]
+RewriteCond %{HTTP_HOST} ^zarabiajnaperfumachfm.pl/solaria.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/solaria.html [R=301,L]
+RewriteCond %{HTTP_HOST} ^zarabiajnaperfumachfm.pl/katalogi.html
+RewriteRule ^(.*)$ http://www.fmperfumypraca.pl/katalogi.html [R=301,L]
