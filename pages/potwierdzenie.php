@@ -87,6 +87,7 @@ Check your data - if you find any error please send us an e-mail - <a href="mail
         Town / City / Bandar: <?php echo $_SESSION['city']; ?><br />
         Postcode / Poskod: <?php echo $_SESSION['postcode']; ?><br />
         Country / Negara: <?php echo $_SESSION['country']; ?><br />
+        State: <?php echo $_SESSION['state']; ?><br />
 Mobile Phone / Telefon Bimbit: <?php echo $_SESSION['mobile']; ?><br />
 Phone / Telefon: <?php echo $_SESSION['phone']; ?><br />
 Comments: <?php echo $_SESSION['text']; ?><br />

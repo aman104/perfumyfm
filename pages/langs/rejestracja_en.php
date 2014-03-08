@@ -56,7 +56,7 @@
                     </td>
                     <td><input name="email" type="text" value="<?php echo $_POST['email'] ?>" /></td>
                 </tr>
-                
+
                 <?php if($require_msg['birth']): ?>
                 <tr>
                     <td></td>
@@ -89,7 +89,7 @@
                 <?php endif; ?>
                 <tr>
                     <td class="t_right">
-                       Town / City / Bandar (required) 
+                       Town / City / Bandar (required)
                     </td>
                     <td><input name="city" type="text" value="<?php echo $_POST['city'] ?>" /></td>
                 </tr>
@@ -117,6 +117,20 @@
                     </td>
                     <td><input name="country" type="text" value="<?php echo $_POST['country'] ?>" /></td>
                 </tr>
+
+                <?php if($require_msg['state']): ?>
+                <tr>
+                    <td></td>
+                    <td class="error_td"><?php echo $require_msg['state']; ?></td>
+                </tr>
+                <?php endif; ?>
+                <tr>
+                    <td class="t_right">
+                       State (required)
+                    </td>
+                    <td><input name="state" type="text" value="<?php echo $_POST['state'] ?>" /></td>
+                </tr>
+
                 <?php if($require_msg['mobile']): ?>
                 <tr>
                     <td></td>
@@ -137,12 +151,12 @@
                 <?php endif; ?>
                 <tr>
                     <td class="t_right">
-                         Phone / Telefon 
+                         Phone / Telefon
                     </td>
                     <td><input name="phone" type="text" value="<?php echo $_POST['phone'] ?>" /></td>
                 </tr>
-                               
-                
+
+
 <?php /*
                 <?php if($require_msg['type']): ?>
                 <tr>
@@ -160,11 +174,11 @@
                                 <option value="">Please Select</option>
                                 <option <?php echo ($_POST['type'] == 'Starter kit - RM 55') ? 'selected="selected"' : ''; ?> value="Starter kit - RM 55">Starter kit - RM 55</option>
                                 <option <?php echo ($_POST['type'] == 'Starter kit - RM 199') ? 'selected="selected"' : ''; ?> value="Starter kit - RM 199">Starter kit - RM 199</option>
-                                                                           
+
                         </select>
                     </td>
                 </tr>
-              
+
                 <tr>
 
                     <td colspan="2">
@@ -175,7 +189,7 @@
 
                     </td>
                 </tr>
-*/ ?>                  
+*/ ?>
                 <?php if($require_msg['text']): ?>
                 <tr>
                     <td></td>
@@ -183,7 +197,7 @@
                 </tr>
                 <?php endif; ?>
                 <tr>
-                    <td class="t_right">                        
+                    <td class="t_right">
                         Comments
                     </td>
                     <td>

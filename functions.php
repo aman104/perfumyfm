@@ -290,8 +290,6 @@ function sendMail($title, $content, $from = 'no-reply@no-reply.pl', $to = 'biuro
 
     $headers .= "From: ". $from . " <" . $from . ">\r\n";
 
-    $to = 'psalajczyk@gmail.com';
-
     ini_set('sendmail_from', $from);
     mail($to, '=?UTF-8?B?'.base64_encode($title).'?=', $content, $headers);
 
@@ -338,7 +336,7 @@ function clearPOST($tab)
         }
         elseif($_SESSION['lang'] == 'en')
         {
-            $require = array('name','name2', 'ic', 'birth', 'city', 'postcode', 'country', 'email', 'mobile', 'address');
+            $require = array('name','name2', 'ic', 'birth', 'city', 'postcode', 'country', 'state', 'email', 'mobile', 'address');
         }
         else
         {
@@ -427,6 +425,7 @@ function clearPOST($tab)
                 Town / City / Bandar: '.$_POST['city'].'<br />
                 Postcode / Poskod: '.$_POST['postcode'].'<br />
                 Country / Negara: '.$_POST['country'].'<br />
+                State: '.$_POST['state'].'<br />
                 Mobile Phone / Telefon Bimbit: '.$_POST['mobile'].'<br />
                 Phone / Telefon: '.$_POST['phone'].'<br />
 
@@ -465,6 +464,7 @@ function clearPOST($tab)
                 $_SESSION['city'] = $_POST['city'];
                 $_SESSION['postcode'] = $_POST['postcode'];
                 $_SESSION['country'] = $_POST['country'];
+                $_SESSION['state'] = $_POST['state'];
                 $_SESSION['mobile'] = $_POST['mobile'];
                 $_SESSION['phone'] = $_POST['phone'];
                 $_SESSION['type'] = $_POST['type'];
@@ -584,6 +584,7 @@ Check your data - if you find any error please send us an e-mail - <a href="mail
         Town / City / Bandar: '.$_SESSION['city'].'<br />
         Postcode / Poskod: '.$_SESSION['postcode'].'<br />
         Country / Negara: '.$_SESSION['country'].'<br />
+        State: '.$_SESSION['state'].'<br />
 Mobile Phone / Telefon Bimbit: '.$_SESSION['mobile'].'<br />
 Phone / Telefon: '.$_SESSION['phone'].'<br />
 Comments: '.$_SESSION['text'].'<br />
