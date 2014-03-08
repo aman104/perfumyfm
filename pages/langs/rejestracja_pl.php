@@ -29,6 +29,18 @@
                     </td>
                     <td><input name="email" type="text" value="<?php echo $_POST['email'] ?>" /></td>
                 </tr>
+                <?php if($require_msg['dataur']): ?>
+                <tr>
+                    <td></td>
+                    <td class="error_td"><?php echo $require_msg['dataur']; ?></td>
+                </tr>
+                <?php endif; ?>
+                <tr>
+                    <td class="t_right">
+                        Data urodzenia
+                    </td>
+                    <td><input name="dataur" placeholder="DD-MM-RRRR" type="text" value="<?php echo $_POST['dataur'] ?>" /></td>
+                </tr>
                 <?php if($require_msg['phone']): ?>
                 <tr>
                     <td></td>
@@ -105,7 +117,7 @@
                                 <option <?php echo ($_POST['type'] == 'Starter MIN') ? 'selected="selected"' : ''; ?> value="Starter MINI">Starter MINI</option>
                                 <option <?php echo ($_POST['type'] == 'Starter 100 + 50') ? 'selected="selected"' : ''; ?> value="Starter 100 + 50">Starter 100 + 50</option>
                                 <option <?php echo ($_POST['type'] == 'Opcja darmowa - status odbiorcy') ? 'selected="selected"' : ''; ?> value="Opcja darmowa - status odbiorcy">Opcja darmowa - status odbiorcy</option>
-                                                                           
+
                         </select>
                     </td>
                 </tr>
@@ -121,10 +133,10 @@
                     </td>
                     <td>
                         <select id="starterPayable" name="payable">
-                            
+
                                 <option value="płatność gotówką przy odbiorze">płatność gotówką przy odbiorze</option>
                                 <option value="gratis">gratis</option>
-                            
+
                         </select>
                     </td>
                 </tr>
@@ -135,7 +147,7 @@
                 </tr>
                 <?php endif; ?>
                 <tr>
-                    <td class="t_right">                        
+                    <td class="t_right">
                         Uwagi
                     </td>
                     <td>

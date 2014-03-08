@@ -1,10 +1,10 @@
 <h3>JAK ROZPOCZĄĆ WSPÓŁPRACĘ?</h3>
 
-<p>Aby zostać dystrybutorem FM GROUP należy mieć ukończone 18 lat, mieć sponsora
+<p>Aby zostać dystrybutorem FM GROUP należy mieć ukończone 16 lat, mieć sponsora
             wprowadzającego, którym dla ciebie jesteśmy my, oraz wypełnić pozycję "rejestracja",
-            a tam wykupić starter jeśli go chcesz, a warto ponieważ klienci chcą powąchać próbki perfum przed ich zakupem. 
-            Posiadamy 2 rodzaje startera, w jego skład wchodzi piórnik z 150 szt. próbek perfum lub z 20 sztuk próbek perfum, 
-            katalog perfumeryjny środków czystości, kosmetyków kolorowych oraz telefonii komórkowej, 
+            a tam wykupić starter jeśli go chcesz, a warto ponieważ klienci chcą powąchać próbki perfum przed ich zakupem.
+            Posiadamy 2 rodzaje startera, w jego skład wchodzi piórnik z 150 szt. próbek perfum lub z 20 sztuk próbek perfum,
+            katalog perfumeryjny środków czystości, kosmetyków kolorowych oraz telefonii komórkowej,
             a także inne materiały marketingowe. WYKUP STARTERA JEST JEDYNĄ INWESTYCJĄ!</p>
 <br />
 <h3>JAK ZARABIAĆ ?</h3>
@@ -19,7 +19,7 @@
                 <a href="http://www.fm-world.pl/programy_lidera_fm.htm">- FM GROUP World - nas jako Liderów FM</a>
             </li>
         </ul>
-</p>    
+</p>
     <br />
                     <h3>DLACZEGO WARTO ZOSTAĆ DYSTRYBUTOREM?</h3>
         <ul>
@@ -31,8 +31,8 @@
             <li> przejrzysty system rozliczeń finansowych, możliwość stałego kontrolowania swoich zarobków na
                 stronie internetowej (dzięki unikalnemu programowi MLM MENAGER)</li>
             <li> promocje i rabaty na zakup produktów</li>
-        </ul>       
- <br />    
+        </ul>
+ <br />
 <h3>Plan Marketingowy</h3>
 
 <p> Plan Marketingowy jest bardzo prosty i daje możliwość zarabiania na prowizjach, obliczanych na podstawie obrotów sponsora i jego grupy. Punkty sumują się w cyklach miesięcznych. Aby osiągnąć dany poziom procentowy dystrybutor wraz ze swoją grupą musi zdobyć podaną w tabeli ilość punktów. Za każdy zakupiony produkt dostajemy punkty: 1 pkt. = 1 zł bez VAT, które później przeliczane są na prowizję. <br />
@@ -51,41 +51,41 @@ Dla przykładu podaję, ile sztuk perfum w cenie dystrybutora 23,64 zł, które 
         <td>3%</td>
         <td>300</td>
         <td>17</td>
-    </tr>    
+    </tr>
     <tr>
         <td>6%</td>
         <td>1200</td>
         <td>66</td>
-    </tr>    
+    </tr>
     <tr>
         <td>9%</td>
         <td>3600</td>
         <td>197</td>
-    </tr> 
+    </tr>
     <tr>
         <td>12%</td>
         <td>7200</td>
         <td>393</td>
-    </tr> 
+    </tr>
     <tr>
         <td>15%</td>
         <td>12000</td>
         <td>654</td>
-    </tr> 
+    </tr>
     <tr>
         <td>18%</td>
         <td>20400</td>
         <td>1112</td>
-    </tr> 
+    </tr>
     <tr>
         <td>21%</td>
         <td>30000</td>
         <td>1634</td>
-    </tr> 
+    </tr>
 </table>
 <br />
 <p>
-	Wypłata dla dystrybutora i grupy wyliczana jest poprzez pomnożenie wielkości zakupów (w punktach) przez wartość procentową. 
+	Wypłata dla dystrybutora i grupy wyliczana jest poprzez pomnożenie wielkości zakupów (w punktach) przez wartość procentową.
 
 
 <br /><br />
@@ -100,7 +100,7 @@ Najlepszym rozwiązaniem jest zbudowanie takiej sieci sprzedaży, abyś na co dz
 <br /><br />
 
 <img src="<?php echo $host; ?>/images/drugi.jpg" />
-<br /><br />	
+<br /><br />
 
 Zbuduj swoją sieć tak, aby inne osoby miały szansę na zrobienie tego samego. Takie rozwiązanie sprawi, że Wasza praca będzie bardziej efektywna i przyniesie większe dochody.
 
@@ -125,19 +125,19 @@ Zbuduj swoją sieć tak, aby inne osoby miały szansę na zrobienie tego samego.
         <li>Bezpośrednio - w siedzibie firmy we Wrocławiu</li>
         <li>Wysyłkowo - za pośrednictwem firmy GLS. </li>
     </ul>
-   <br /> 
+   <br />
    Koszt wysyłki:
-   <br /> 
+   <br />
 
 <ul>
     <li>zamówienie do 141 zł - 18 zł</li>
 <li>od 141 zł do 237 zł - TYLKO 7 zł</li>
 <li>od 237 zł - koszty pokrywa FM Group Polska.</li>
-</ul> 
+</ul>
 
 <br />
 
 Istnieje również możliwość składania zamówień grupowych. Również w tym przypadku, jeśli pod jeden adres trafi zamówienie na minimum 237 zł, koszty przesyłki pokrywa firma.
 
-</p>            
-<br /><br />   
+</p>
+<br /><br />

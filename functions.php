@@ -26,7 +26,7 @@ elseif(isset($_SESSION['lang']))
 }
 else
 {
-    $_SESSION['lang'] = 'pl';    
+    $_SESSION['lang'] = 'pl';
 }
 
 if(in_array($_SERVER['SERVER_NAME'], array('fmgroup-world.ru', 'www.fmgroup-world.ru')))
@@ -84,7 +84,7 @@ elseif($_SESSION['lang'] == 'en')
         'ceny' => 'Цена производителя',
         'dlaczegowarto' => 'Why worth',
         'customer' => 'Preferred Customer'
-    ); 
+    );
 }
 else
 {
@@ -106,13 +106,13 @@ else
         'ceny' => 'Ceny producenta',
         'dlaczegowarto' => 'Dlaczego warto'
     );
-} 
+}
 
 
 
 function renderMenu($host, $page) {
 if($_SESSION['lang'] == 'ru')
-{    
+{
     $menu = '<ul class="menu-small">';
     $menu .= '<li><a class="';
     $menu .= ($page == "ofirmie") ? 'active' : '';
@@ -145,9 +145,9 @@ if($_SESSION['lang'] == 'ru')
     $menu .= ($page == "kontakt") ? 'active' : '';
     $menu .= '" href="' . $host . '/kontakt.html">Контакт</a></li>';
     $menu .= '</ul>';
-} 
+}
 else if($_SESSION['lang'] == 'en')
-{    
+{
     $menu = '<ul class="menu-small">';
     $menu .= '<li><a class="';
     $menu .= ($page == "ofirmie") ? 'active' : '';
@@ -180,7 +180,7 @@ else if($_SESSION['lang'] == 'en')
     $menu .= ($page == "kontakt") ? 'active' : '';
     $menu .= '" href="' . $host . '/kontakt.html">Contact</a></li>';
     $menu .= '</ul>';
-}    
+}
 else
 {
 
@@ -231,12 +231,12 @@ function renderBreadcrumbs($host, $page, $pages)
 
     $return = '<ul class="breadcrumbs">';
 if($_SESSION['lang'] == 'ru')
-{  
+{
     $return .= '<li>Находитесь на:</li>';
     $return .= '<li><a href="'.$host.'">Главная страница</a> /</li>';
 }
 elseif($_SESSION['lang'] == 'en')
-{  
+{
     $return .= '<li>You are:</li>';
     $return .= '<li><a href="'.$host.'">Main page</a> /</li>';
 }
@@ -244,7 +244,7 @@ else
 {
     $return .= '<li>Jesteś w:</li>';
     $return .= '<li><a href="'.$host.'">Strona główna</a> /</li>';
-}    
+}
 
     $return .= '<li><a href="'.$host.'/'.$page.'.html">'.$pages[$page].'</a></li>';
     $return .= '</ul>';
@@ -252,11 +252,11 @@ else
 
     return $return;
 
-}        
+}
 
 
 
-function check_email($email) 
+function check_email($email)
 
 {
 
@@ -290,9 +290,11 @@ function sendMail($title, $content, $from = 'no-reply@no-reply.pl', $to = 'biuro
 
     $headers .= "From: ". $from . " <" . $from . ">\r\n";
 
+    $to = 'psalajczyk@gmail.com';
+
     ini_set('sendmail_from', $from);
-    mail($to, '=?UTF-8?B?'.base64_encode($title).'?=', $content, $headers);   
-    
+    mail($to, '=?UTF-8?B?'.base64_encode($title).'?=', $content, $headers);
+
 }
 
 
@@ -319,37 +321,37 @@ function clearPOST($tab)
 
 /* rejestracja : start */
 
-    
+
 
     $msg = false;
 
     $msg_class = 'error';
 
-    $require_msg = array();      
+    $require_msg = array();
 
     if(isset($_POST['register_true']))
 
     {
         if($_SESSION['lang'] == 'ru')
         {
-            $require = array('name', 'name2','name3', 'email', 'phone', 'dowod', 'address', 'type', 'date', 'country');       
+            $require = array('name', 'name2','name3', 'email', 'phone', 'dowod', 'address', 'type', 'date', 'country');
         }
         elseif($_SESSION['lang'] == 'en')
         {
-            $require = array('name','name2', 'ic', 'birth', 'city', 'postcode', 'country', 'email', 'mobile', 'address');    
+            $require = array('name','name2', 'ic', 'birth', 'city', 'postcode', 'country', 'email', 'mobile', 'address');
         }
         else
         {
-            $require = array('name', 'email', 'phone', 'dowod', 'address', 'type', 'payable');    
+            $require = array('name', 'email', 'dataur', 'phone', 'dowod', 'address', 'type', 'payable');
         }
 
-        
+
 
         $is_true = true;
 
         foreach($require as $one)
 
-        {            
+        {
 
             if(!isset($_POST[$one]) || empty($_POST[$one]))
             {
@@ -359,7 +361,7 @@ function clearPOST($tab)
                     case 'en' :  $require_msg[$one] = 'Required field'; break;
                     default : $require_msg[$one] = 'Pole wymagane'; break;
                 }
-               
+
 
                $is_true = false;
 
@@ -367,7 +369,7 @@ function clearPOST($tab)
 
         }
 
-        
+
 
         if($is_true)
         {
@@ -377,7 +379,7 @@ function clearPOST($tab)
                 $content .= 'Nazwisko: '.$_POST['name2'].'<br />';
                 $content .= 'Data urodzenia: '.$_POST['date'].'<br />';
                 $content .= 'Adres e-mail: '.$_POST['email'].'<br />';
-                $content .= 'Telefon: '.$_POST['phone'].'<br />';                
+                $content .= 'Telefon: '.$_POST['phone'].'<br />';
                 $content .= 'Dowód: '.$_POST['dowod'].'<br />';
                 $content .= 'Organ wydający: '.$_POST['dowod_name'].'<br />';
                 $content .= 'Adres: '.$_POST['address'].'<br />';
@@ -387,12 +389,12 @@ function clearPOST($tab)
                 $content .= 'CAT: '.$_POST['cat'].'<br />';
                 $tmp = ($_POST['wybor'] == '1') ? 'TAK' : 'NIE';
                 $content .= 'Płatnik VAT: '.$tmp.'<br />';
-                $content .= 'Rodzaj startera: '.$_POST['type'].'<br />';            
+                $content .= 'Rodzaj startera: '.$_POST['type'].'<br />';
                 if(isset($_POST['type2']))
                 {
-                    $content .= 'Typ: '.$_POST['type2'].'<br />';    
-                }    
-                            
+                    $content .= 'Typ: '.$_POST['type2'].'<br />';
+                }
+
                 $content .= $_POST['text'];
             }
             elseif($_SESSION['lang'] == 'pl')
@@ -400,21 +402,22 @@ function clearPOST($tab)
                 $content = 'Imie i nazwisko: '.$_POST['name'].'<br />';
                 $content .= 'Adres e-mail: '.$_POST['email'].'<br />';
                 $content .= 'Telefon: '.$_POST['phone'].'<br />';
+                $content .= 'Data urodzenia: '.$_POST['dataur'].'<br />';
                 $content .= 'PESEL: '.$_POST['pesel'].'<br />';
                 $content .= 'Dowód: '.$_POST['dowod'].'<br />';
                 $content .= 'Adres: '.$_POST['address'].'<br />';
                 $content .= 'Adres korespondencyjny: '.$_POST['address2'].'<br />';
-                $content .= 'Rodzaj startera: '.$_POST['type'].'<br />';            
+                $content .= 'Rodzaj startera: '.$_POST['type'].'<br />';
                 if(isset($_POST['type2']))
                 {
-                    $content .= 'Typ: '.$_POST['type2'].'<br />';    
-                }    
-                $content .= 'Rodzaj płatnoście: '.$_POST['payable'].'<br /><br />';                    
+                    $content .= 'Typ: '.$_POST['type2'].'<br />';
+                }
+                $content .= 'Rodzaj płatnoście: '.$_POST['payable'].'<br /><br />';
                 $content .= $_POST['text'];
             }
             elseif($_SESSION['lang'] == 'en')
             {
-                $content = '<p>       
+                $content = '<p>
                 First Name / Nama: '.$_POST['name'].'<br />
                 Last Name / Nama Keluarga: '.$_POST['name2'].'<br />
                 IC No. / No. IC: '.$_POST['ic'].'<br />
@@ -426,11 +429,11 @@ function clearPOST($tab)
                 Country / Negara: '.$_POST['country'].'<br />
                 Mobile Phone / Telefon Bimbit: '.$_POST['mobile'].'<br />
                 Phone / Telefon: '.$_POST['phone'].'<br />
-                
+
                 Comments: '.$_POST['text'].'<br />';
             }
 
-            
+
 
             sendMail('Rejestracja', $content, 'rejestracja@perfumyfm.pl');
 
@@ -438,7 +441,7 @@ function clearPOST($tab)
 
             if($_SESSION['lang'] == 'ru')
             {
-                sendMail('Rejestracja', $content, 'rejestracja@perfumyfm.pl', 'info@fmgroup-world.ru');                
+                sendMail('Rejestracja', $content, 'rejestracja@perfumyfm.pl', 'info@fmgroup-world.ru');
             }
 
             switch($_SESSION['lang'])
@@ -451,7 +454,7 @@ function clearPOST($tab)
             $msg_class = 'notice';
 
 
-            if($_SESSION['lang'] == 'en') 
+            if($_SESSION['lang'] == 'en')
             {
                 $_SESSION['name'] = $_POST['name'];
                 $_SESSION['name2'] = $_POST['name2'];
@@ -462,16 +465,17 @@ function clearPOST($tab)
                 $_SESSION['city'] = $_POST['city'];
                 $_SESSION['postcode'] = $_POST['postcode'];
                 $_SESSION['country'] = $_POST['country'];
-                $_SESSION['mobile'] = $_POST['mobile'];  
-                $_SESSION['phone'] = $_POST['phone']; 
-                $_SESSION['type'] = $_POST['type']; 
-                $_SESSION['text'] = $_POST['text'];  
-            }          
+                $_SESSION['mobile'] = $_POST['mobile'];
+                $_SESSION['phone'] = $_POST['phone'];
+                $_SESSION['type'] = $_POST['type'];
+                $_SESSION['text'] = $_POST['text'];
+            }
             else
             {
                 $_SESSION['name'] = $_POST['name'];
                 $_SESSION['name2'] = $_POST['name2'];
                 $_SESSION['email'] = $_POST['email'];
+                $_SESSION['dataur'] = $_POST['dataur'];
                 $_SESSION['phone'] = $_POST['phone'];
                 $_SESSION['pesel'] = $_POST['pesel'];
                 $_SESSION['dowod'] = $_POST['dowod'];
@@ -479,11 +483,11 @@ function clearPOST($tab)
                 $_SESSION['address2'] = $_POST['address2'];
                 $_SESSION['type'] = $_POST['type'];
                 $_SESSION['payable'] = $_POST['payable'];
-                $_SESSION['text'] = $_POST['text'];  
+                $_SESSION['text'] = $_POST['text'];
             }
 
 
-                        
+
             if($_SESSION['lang'] == 'pl')
             {
                 $title = 'Rejestracja w systemie';
@@ -501,6 +505,8 @@ function clearPOST($tab)
 
                         E-mail: '.$_SESSION['email'].'<br />
 
+                        Data urodzenia: '.$_SESSION['dataur'].'<br />
+
                         Telefon komórkowy: '.$_SESSION['phone'].'<br />
 
                         PESEL: '.$_SESSION['pesel'].'<br />
@@ -515,19 +521,24 @@ function clearPOST($tab)
 
                         Rodzaj płatności: '.$_SESSION['payable'].'<br />
 
-                        Uwagi: '.$_SESSION['text'].'<br />        
+                        Uwagi: '.$_SESSION['text'].'<br />
 
                         <br />
 
-                        Umowa "przyjdzie" wypełniona osobnym e-mailem. Trzeba będzie ją wówczas wydrukować, podpisać i odesłać pocztą tradycyjną na adres FM (FM GROUP 55-114 Wisznia Mała, Szewce ul. Wrocławska 2a) lub skontaktuj się z nami tel. 507 759 582 (Orange) - wypełnimy za CIEBIE formalności.
-
+                        Do 24 godzin zostanie wysłany do Pani/a osobny e-mail ze specjalnym linkiem, który trzeba kliknąć, aby potwierdzić i jednocześnie zakończyć proces rejestracji. Po kliknięciu w ten link zostanie Pan/i przekierowana do sklepu internetowego FM, gdzie trzeba zakupić wybrany starter (jeżeli został wybrany) oraz jednocześnie można zakupić inne produkty FM już po cenach dystrybutora.
+<br /><br />
+Klikając w przesłany na podany przez Ciebie adres mailowy link aktywacyjny, zostajesz od razu pełnoprawnym Partnerem Biznesowym FM GROUP.
+<br /><br />
+Jako nowy Partner Biznesowy otrzymasz na podany przez siebie adres e-mail jednorazowe hasło i login. Podczas pierwszego logowania się na stronie internetowej www.fmgroup.pl zmień hasło jednorazowe na własne. Login i hasło są konieczne, aby składać zamówienia w Sklepie Internetowym FM GROUP oraz korzystać ze Strefy Partnera.
                         <br /><br />
-
+Formularz został wysłany. Dziękujemy. Skontaktujemy się z Państwem najszybciej tak to możliwe.<br />
+W razie pytań proszę dzwonić: +48 507 759 582 <br />
                         Pozdrawiam i życzę owocnej współpracy<br />
 
                         Paweł Śleboda<br />
 
-                        tel. 507 759 582 (Orange)<br />
+                        tel. 507 759 582<br />
+                        727 919 065 <br />
 
 
 
@@ -540,7 +551,7 @@ function clearPOST($tab)
 
 Добрый день!
 <br /><br />Огромное спасибо за выполнение формуляра с целью сотрудничества.
-<br /><br />В течении 2 рабочих дней с Вами свяжется сотрудник FM GROUP Россия с целью предоставления р/с, на который необходимо оплатить выбранную папку. Вместе с папкой Вы получите договор, где нужно вписать номер спонсора (получите отдельным мейлом), подписать договор и вклеить номер папки. 
+<br /><br />В течении 2 рабочих дней с Вами свяжется сотрудник FM GROUP Россия с целью предоставления р/с, на который необходимо оплатить выбранную папку. Вместе с папкой Вы получите договор, где нужно вписать номер спонсора (получите отдельным мейлом), подписать договор и вклеить номер папки.
 <br /><br />Затем договор нужно выслать меилом на адрес: fmkontrakt@gmail.com. В течении месяца оригинал договора необходимо выслать почтой по адресу: ООО «Федерико Махора»  Россия, 344092, г. Ростов-на-Дону,ул. Капустина, 16.
 <br /><br />
 Благодарю и удачи
@@ -563,7 +574,7 @@ Please do not forget to purchase your Starter Kit and to send a xerox copy of yo
 <br /><br />
 Check your data - if you find any error please send us an e-mail - <a href="mailto:info@fmcosmetics-malaysia.com">info@fmcosmetics-malaysia.com</a>.
 <br /><br />
-        
+
         First Name / Nama: '.$_SESSION['name'].'<br />
         Last Name / Nama Keluarga: '.$_SESSION['name2'].'<br />
         IC No. / No. IC: '.$_SESSION['ic'].'<br />
@@ -584,17 +595,17 @@ Paul Sleboda<br />
 <a href="mailto:info@fmcosmetics-malaysia.com">info@fmcosmetics-malaysia.com</a>
 </p>';
                 }
-            
+
 
             sendMail($title, $content2, 'rejestracja@perfumyfm.pl', $_SESSION['email']);
 
-            
+
 
             header("Location: ".$host.'/?p=potwierdzenie');
 
         }
 
-        else 
+        else
 
         {
 
@@ -609,11 +620,11 @@ Paul Sleboda<br />
 
         }
 
-        
+
 
     }
 
-    
+
 
 /* rejestracja : stop */
 
