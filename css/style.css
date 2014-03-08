@@ -41,14 +41,14 @@ h1 {
 h1 span {
     color: #A00040;
 }
-     
+
 
 h4 {
     font: 20px Tahoma;
     font-style: italic;
 	color: #A00040;
 	margin-bottom: 6px;
-}    
+}
 
 
 p {
@@ -66,7 +66,7 @@ a {
     position: absolute;
     right: 10px;
     top: 80px;
-}    
+}
 
 #logo_pl {
     display: block;
@@ -213,7 +213,7 @@ a {
 .button {
     display: block;
     width: 175px;
-    height: 63px; 
+    height: 63px;
     margin-bottom: 3px !important;
 }
 
@@ -361,7 +361,7 @@ a {
     padding-right: 7px;
     padding-top: 5px;
     padding-bottom: 5px;
-}    
+}
 
 #menu ul li a:hover, #menu ul li a.active {
     background: #91173C !important;
@@ -438,7 +438,7 @@ a {
     margin: 0;
     padding: 0;
     clear: both;
-    overflow: hidden;    
+    overflow: hidden;
     padding-left: 10px;
 }
 
@@ -447,7 +447,7 @@ a {
     margin: 0;
     padding: 0;
     margin-left: 3px;
-}   
+}
 
 .breadcrumbs li, .breadcrumbs li a {
     font: 12px Tahoma;
@@ -481,11 +481,11 @@ h3 {
 }
 
 .send_ru {
-    background: url(../img/send_ru.png) no-repeat;   
+    background: url(../img/send_ru.png) no-repeat;
 }
 
 .send_en {
-    background: url(../img/send_en.png) no-repeat;   
+    background: url(../img/send_en.png) no-repeat;
 }
 
 .send_pl:hover, .send_ru:hover, .send_en:hover {
@@ -535,7 +535,7 @@ select {
 }
 
 .t_right {
-  text-align: right;  
+  text-align: right;
 }
 
 .rej-form input[type="text"], .rej-form textarea {
@@ -544,7 +544,7 @@ select {
 
 .rej-form td {
     vertical-align: middle;
-}    
+}
 
 .rejestruj_pl {
     border: 0;
@@ -597,13 +597,13 @@ strong {
 .msg_notice {
     background: #C4F99C;
     border: 1px solid #DDD;
-    color: #000;    
+    color: #000;
 }
 
 .msg_error {
     background: #F97698;
     border: 1px solid #DDD;
-    color: #fff;    
+    color: #fff;
 }
 
 .error_td {
@@ -674,7 +674,7 @@ strong {
     height: 30px;
     padding-top: 160px;
     text-align: center;
-} 
+}
 
 .cat2_pl {
     background: url(../img/cat/cat2_pl.png) no-repeat;
@@ -701,7 +701,7 @@ strong {
     height: 159px;
     padding-top: 170px;
     text-align: center;
-} 
+}
 
 .cat2_ru {
     background: url(../img/cat/cat2_ru.png) no-repeat;
@@ -710,7 +710,7 @@ strong {
     height: 159px;
     padding-top: 170px;
     text-align: center;
-}    
+}
 
 .cat1_en {
     background: url(../img/cat/cat1_en.png) no-repeat;
@@ -719,7 +719,7 @@ strong {
     height: 30px;
     padding-top: 160px;
     text-align: center;
-} 
+}
 
 .cat2_en {
     background: url(../img/cat/cat2_en.png) no-repeat;
@@ -728,7 +728,7 @@ strong {
     height: 30px;
     padding-top: 160px;
     text-align: center;
-}  
+}
 
 .cat3_en {
     background: url(../img/cat/cat3_en.png) no-repeat;
@@ -737,10 +737,19 @@ strong {
     height: 30px;
     padding-top: 160px;
     text-align: center;
-} 
+}
 
 .cat4_pl {
     background: url(../img/cat/cat4_pl.png) no-repeat;
+    display: block;
+    width: 114px;
+    height: 30px;
+    padding-top: 160px;
+    text-align: center;
+}
+
+.cat6_pl {
+    background: url(../img/cat/cat6_pl.png) no-repeat;
     display: block;
     width: 114px;
     height: 30px;
