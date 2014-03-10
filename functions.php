@@ -538,7 +538,7 @@ W razie pytań proszę dzwonić: +48 507 759 582 <br />
                         Paweł Śleboda<br />
 
                         tel. 507 759 582<br />
-                        727 919 065 <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;727 919 065 <br />
 
 
 
