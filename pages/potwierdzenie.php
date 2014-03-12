@@ -37,7 +37,7 @@ Klikając w przesłany na podany przez Ciebie adres mailowy link aktywacyjny, zo
 <br /><br />
 Jako nowy Partner Biznesowy otrzymasz na podany przez siebie adres e-mail jednorazowe hasło i login. Podczas pierwszego logowania się na stronie internetowej www.fmgroup.pl zmień hasło jednorazowe na własne. Login i hasło są konieczne, aby składać zamówienia w Sklepie Internetowym FM GROUP oraz korzystać ze Strefy Partnera.
                         <br /><br />
-Formularz został wysłany. Dziękujemy. Skontaktujemy się z Państwem najszybciej tak to możliwe.<br />
+Formularz został wysłany. Dziękujemy. Skontaktujemy się z Państwem najszybciej jak to możliwe.<br />
 W razie pytań proszę dzwonić: +48 507 759 582 <br />
                         Pozdrawiam i życzę owocnej współpracy<br />
 
