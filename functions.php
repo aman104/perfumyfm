@@ -4,10 +4,6 @@ error_reporting(0);
 
 session_start();
 
-
-
-//$host = 'http://localhost/~fmgroup';
-
 $host = 'http://'.$_SERVER['SERVER_NAME'];
 
 $is_home = isset($_GET['p']) ? false : true;
@@ -29,7 +25,7 @@ else
     $_SESSION['lang'] = 'pl';
 }
 
-if(in_array($_SERVER['SERVER_NAME'], array('fmgroup-world.ru', 'www.fmgroup-world.ru')))
+if(in_array($_SERVER['SERVER_NAME'], array('fmgroup-world.ru', 'www.fmgroup-world.ru', 'fmgroup-russia.ru', 'www.fmgroup-russia.ru')))
 {
     $_SESSION['lang'] = 'ru';
 }
