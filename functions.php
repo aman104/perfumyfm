@@ -8,7 +8,7 @@ $host = 'http://'.$_SERVER['SERVER_NAME'];
 
 $is_home = isset($_GET['p']) ? false : true;
 
-$langs = array('pl', 'ru', 'en');
+$langs = array('pl', 'ru', 'en', 'en2');
 
 $page = (isset($_GET['p'])) ? $_GET['p'] : false;
 
@@ -36,6 +36,11 @@ if(in_array($_SERVER['SERVER_NAME'], array('fmgroup-world.eu', 'www.fmgroup-worl
     $_SESSION['lang'] = 'en';
 }
 
+if(in_array($_SERVER['SERVER_NAME'], array('fmworld-indonesia.com', 'www.fmworld-indonesia.com')))
+{
+    $_SESSION['lang'] = 'en2';
+}
+
 
 
 
@@ -61,7 +66,7 @@ if($_SESSION['lang'] == 'ru')
     );
 
 }
-elseif($_SESSION['lang'] == 'en')
+elseif($_SESSION['lang'] == 'en' || $_SESSION['lang'] == 'en2')
 {
    $pages = array(
         'ofirmie' => 'About company',
@@ -100,7 +105,8 @@ else
         'solaria' => 'Solaria, gabinety kosmetyczne i fryzjerskie',
         'potwierdzenie' => 'Potwierdzenie rejestracji',
         'ceny' => 'Ceny producenta',
-        'dlaczegowarto' => 'Dlaczego warto'
+        'dlaczegowarto' => 'Dlaczego warto',
+        'cookies' => 'Polityka prywatności'
     );
 }
 
@@ -142,7 +148,7 @@ if($_SESSION['lang'] == 'ru')
     $menu .= '" href="' . $host . '/kontakt.html">Контакт</a></li>';
     $menu .= '</ul>';
 }
-else if($_SESSION['lang'] == 'en')
+else if($_SESSION['lang'] == 'en' || $_SESSION['lang'] == 'en2')
 {
     $menu = '<ul class="menu-small">';
     $menu .= '<li><a class="';
@@ -231,7 +237,7 @@ if($_SESSION['lang'] == 'ru')
     $return .= '<li>Находитесь на:</li>';
     $return .= '<li><a href="'.$host.'">Главная страница</a> /</li>';
 }
-elseif($_SESSION['lang'] == 'en')
+elseif($_SESSION['lang'] == 'en' || $_SESSION['lang'] == 'en2')
 {
     $return .= '<li>You are:</li>';
     $return .= '<li><a href="'.$host.'">Main page</a> /</li>';
@@ -330,7 +336,7 @@ function clearPOST($tab)
         {
             $require = array('name', 'name2','name3', 'email', 'phone', 'dowod', 'address', 'type', 'date', 'country');
         }
-        elseif($_SESSION['lang'] == 'en')
+        elseif($_SESSION['lang'] == 'en' || $_SESSION['lang'] == 'en2')
         {
             $require = array('name','name2', 'ic', 'birth', 'city', 'postcode', 'country', 'state', 'email', 'mobile', 'address');
         }
@@ -352,7 +358,8 @@ function clearPOST($tab)
                 switch($_SESSION['lang'])
                 {
                     case 'ru' :  $require_msg[$one] = 'Обязательные поля'; break;
-                    case 'en' :  $require_msg[$one] = 'Required field'; break;
+                    case 'en' :
+                    case 'en2' :  $require_msg[$one] = 'Required field'; break;
                     default : $require_msg[$one] = 'Pole wymagane'; break;
                 }
 
@@ -409,7 +416,7 @@ function clearPOST($tab)
                 $content .= 'Rodzaj płatnoście: '.$_POST['payable'].'<br /><br />';
                 $content .= $_POST['text'];
             }
-            elseif($_SESSION['lang'] == 'en')
+            elseif($_SESSION['lang'] == 'en' || $_SESSION['lang'] == 'en2')
             {
                 $content = '<p>
                 First Name / Nama: '.$_POST['name'].'<br />
@@ -436,20 +443,21 @@ function clearPOST($tab)
 
             if($_SESSION['lang'] == 'ru')
             {
-                sendMail('Rejestracja', $content, 'rejestracja@perfumyfm.pl', 'info@fmgroup-world.ru');
+                sendMail('Rejestracja', $content, 'rejestracja@perfumyfm.pl', 'fmgroup-russia.ru');
             }
 
             switch($_SESSION['lang'])
             {
                 case 'ru' :  $msg = 'Ваш запрос уже отправлен'; break;
-                case 'en' :  $msg = 'The report has been sent'; break;
+                case 'en' :
+                case 'en2' : $msg = 'The report has been sent'; break;
                 default : $msg = 'Zgłoszenie zostało wysłane'; break;
             }
 
             $msg_class = 'notice';
 
 
-            if($_SESSION['lang'] == 'en')
+            if($_SESSION['lang'] == 'en' || $_SESSION['lang'] == 'en2' )
             {
                 $_SESSION['name'] = $_POST['name'];
                 $_SESSION['name2'] = $_POST['name2'];
@@ -548,7 +556,7 @@ W razie pytań proszę dzwonić: +48 507 759 582 <br />
 Добрый день!
 <br /><br />Огромное спасибо за выполнение формуляра с целью сотрудничества.
 <br /><br />В течении 2 рабочих дней с Вами свяжется сотрудник FM GROUP Россия с целью предоставления р/с, на который необходимо оплатить выбранную папку. Вместе с папкой Вы получите договор, где нужно вписать номер спонсора (получите отдельным мейлом), подписать договор и вклеить номер папки.
-<br /><br />Затем договор нужно выслать меилом на адрес: fmkontrakt@gmail.com. В течении месяца оригинал договора необходимо выслать почтой по адресу: ООО «Федерико Махора»  Россия, 344092, г. Ростов-на-Дону,ул. Капустина, 16.
+<br /><br />Затем договор нужно выслать меилом на адрес: fmgroup-russia.ru. В течении месяца оригинал договора необходимо выслать почтой по адресу: ООО «Федерико Махора»  Россия, 344092, г. Ростов-на-Дону,ул. Капустина, 16.
 <br /><br />
 Благодарю и удачи
 <br /><br />
@@ -592,6 +600,42 @@ Paul Sleboda<br />
 <a href="mailto:info@fmcosmetics-malaysia.com">info@fmcosmetics-malaysia.com</a>
 </p>';
                 }
+                elseif($_SESSION['lang'] == 'en2')
+                {
+                                        $title = 'Confirmation of registration';
+                    $content2 = '<p>
+Thank You.
+<br /><br />
+Your registration completed successfully!
+<br /><br />
+The application form and your identification number of FM GROUP will be sent to your e-mail address in 2 work days.
+<br /><br />
+Please do not forget to purchase your Starter Kit and to send a xerox copy of your IC (both sides) to FM Cosmetics Indonesia office within 30 days after registration. Failing to do so will result in deleting of your FM ID number from our system.
+<br /><br />
+Check your data - if you find any error please send us an e-mail - <a href="mailto:info@fmworld-indonesia.com">info@fmworld-indonesia.com</a>.
+<br /><br />
+
+        First Name / Nama: '.$_SESSION['name'].'<br />
+        Last Name / Nama Keluarga: '.$_SESSION['name2'].'<br />
+        IC No. / No. IC: '.$_SESSION['ic'].'<br />
+        Your Email: '.$_SESSION['email'].'<br />
+        Date of Birth / Tarikh Lahir: '.$_SESSION['birth'].'<br />
+        Address / Alamat: '.$_SESSION['address'].'<br />
+        Town / City / Bandar: '.$_SESSION['city'].'<br />
+        Postcode / Poskod: '.$_SESSION['postcode'].'<br />
+        Country / Negara: '.$_SESSION['country'].'<br />
+        State: '.$_SESSION['state'].'<br />
+Mobile Phone / Telefon Bimbit: '.$_SESSION['mobile'].'<br />
+Phone / Telefon: '.$_SESSION['phone'].'<br />
+Comments: '.$_SESSION['text'].'<br />
+
+<br /><br />
+I greet and wish you a fruitful cooperation<br />
+FM GROUP Manager<br />
+Paul Sleboda<br />
+<a href="mailto:info@fmworld-indonesia.com">info@fmworld-indonesia.com</a>
+</p>';
+                }
 
 
             sendMail($title, $content2, 'rejestracja@perfumyfm.pl', $_SESSION['email']);
@@ -609,7 +653,8 @@ Paul Sleboda<br />
             switch($_SESSION['lang'])
             {
                 case 'ru' :  $msg = 'Пожалуйста, заполните все обязательные поля'; break;
-                case 'en' :  $msg = 'Please fill in all fields'; break;
+                case 'en' :
+                case 'en2' :  $msg = 'Please fill in all fields'; break;
                 default : $msg = 'Wypełnij poprawnie wszystkie pola'; break;
             }
 

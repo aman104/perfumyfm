@@ -4,8 +4,11 @@
                     <td colspan="2">
                         <h3>Complete the registration form</h3>
 
-                        <p>(An application for joining the FM GROUP COSMETICS MALAYSIA)</p>
-
+                        <?php if($_SESSION['lang'] == 'en2'): ?>
+                            <p>(An application for joining the FM GROUP COSMETICS INDONESIA)</p>
+                        <?php else: ?>
+                            <p>(An application for joining the FM GROUP COSMETICS MALAYSIA)</p>
+                        <?php endif; ?>
                     </td>
                 </tr>
                 <?php if($require_msg['name']): ?>

@@ -6,7 +6,8 @@
         switch($_SESSION['lang'])
         {
             case 'ru' : echo '<title>FM Group- самая лучшая дополнительная работа для Вас- работа и духи</title>'; break;
-            case 'en' : echo '<title>FM GROUP – Buy at  wholesale price become the distributor and earn - FM  perfumes </title>'; break;
+            case 'en' :
+            case 'en2' :  echo '<title>FM GROUP – Buy at  wholesale price become the distributor and earn - FM  perfumes </title>'; break;
             default : echo '<title>FM Group - perfumy fm - najlepsza praca dodatkowa dla Ciebie - praca</title>';
         }
         ?>
@@ -16,8 +17,24 @@
 		<meta name="keywords" content="FM group, praca dodatkowa, perfumy fm, współpraca fm, praca dorywcza, mlm, marketing sieciowy" />
         <link rel="stylesheet" href="<?php echo $host ?>/css/reset.css" type="text/css" />
         <link rel="stylesheet" href="<?php echo $host ?>/css/style.css" type="text/css" />
-        <script type="text/javascript" src="<?php echo $host ?>/js/jquery-1.7.1.min.js"></script>
+        <link rel="stylesheet" href="<?php echo $host ?>/css/lightbox.css" />
+        <script type="text/javascript" src="<?php echo $host ?>/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="<?php echo $host ?>/js/lightbox.min.js"></script>
         <script type="text/javascript" src="<?php echo $host ?>/js/main.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="<?php echo $host ?>/css/jquery.cookiebar.css" />
+        <script type="text/javascript" src="<?php echo $host ?>/js/jquery.cookiebar.js"></script>
+
+        <?php if($_SESSION['lang'] == 'pl'): ?>
+          <script>
+          $(function() {
+            $.cookieBar({
+              message: 'Strona korzysta z plików cookies w celu realizacji usług zgodnie z <a href="/cookies.html">Polityką prywatności.</a>',
+              acceptText: 'Rozumiem',
+            });
+          });            
+          </script>
+        <?php endif; ?>
 
 <?php if($_SERVER['SERVER_NAME'] == 'fmcosmetics-malaysia.com'): ?>
 

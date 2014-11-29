@@ -182,6 +182,12 @@ Preffered Customer gives you the possibility to order all  products of FM Group 
 
 <?php endif; ?>
 
+<?php if($_SESSION['lang'] == 'en2'): ?>
+
+<?php include('pages/langs/startery_en2.php'); ?>
+
+<?php endif; ?>
+
 <br /><br />
 
 <?php include('pages/dane.php'); ?>

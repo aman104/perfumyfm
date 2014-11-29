@@ -1,0 +1,1 @@
+<?php include('pages/langs/jakzarabiac_en.php'); ?>

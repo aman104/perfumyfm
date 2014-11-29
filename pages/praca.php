@@ -28,7 +28,8 @@ FM GROUP существует с 1 сентября 2004 года. Во всем
 </p>  
 '); 
     break;
-    case 'en' : echo ('
+    case 'en' :
+    case 'en2' :  echo ('
 <p>  
 Just imagine
 <br /><br />

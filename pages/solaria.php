@@ -37,7 +37,8 @@
 ДЕЙСТВИТЕЛЬНО СТОИТ!!!
 </p>
 '; break;
-        case 'en' : echo '
+        case 'en' :
+        case 'en2' : echo '
         <p>
         Start earning with FM GROUP MALAYSIA from the direct  FM GROUP products’ sale. We are one of the most dynamic  company in MLM sector-  Take advantage of it!
         <br /><br />

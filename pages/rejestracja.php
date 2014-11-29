@@ -16,7 +16,8 @@
             switch($_SESSION['lang'])
             {
                 case 'ru' : echo '<h2>Регистрация</h2>'; break;
-                case 'en' : echo '<h2>Registration</h2>'; break;                
+                case 'en' :
+                case 'en2' :  echo '<h2>Registration</h2>'; break;                
                 default : echo '<h2>Rejestracja</h2>';
             }
         ?>

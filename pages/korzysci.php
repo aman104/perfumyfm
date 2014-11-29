@@ -40,7 +40,8 @@ switch($_SESSION['lang'])
 '); 
 
     break;
-    case 'en' : echo ('
+    case 'en' :
+    case 'en2' :  echo ('
 <h3>Benefits</h3>
 <ul>
 <li>24-hour easy access to the web site with user’s name and login</li>

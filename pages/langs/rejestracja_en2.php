@@ -1,0 +1,1 @@
+<?php include('pages/langs/rejestracja_en.php'); ?>

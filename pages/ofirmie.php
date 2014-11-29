@@ -22,36 +22,48 @@ FM Group- это компания работающая в секторе мно�
 
     break;
 
-    case 'en' : echo ('
-    	<p>
+    case 'en' :
+        echo ('
+                <p>
+                <div style="text-align: center;"><img src="/images/Picture1.jpg" /></div>
+        <strong>FM GROUP World</strong> is an international network that has built a reputation as an honest, reliable organization, accredited by the “Better Business Bureau”.
+        <br /><br />The Company is known for its quality, diverse selection, impeccable service and affordable product value.
+        <br /><br /><strong>Federico Mahora</strong> has proven to be an international success story! <br /><br />
+        <div style="text-align: center;"><img style="width: 400px;" src="/images/Picture1_renamed_31095.jpg" /></div><br />
+        <strong>FM Cosmetics Malaysia Sdn Bhd</strong> is a part of <strong>FM GROUP World</strong> already operating in over 50 countries. The owners and founders of the Company, Artur and Katarzyna Trawinski have a vision. They want to bring the luxury of designer brands to lives of everyday people, and they want to do it 24 hours a day without any stoppage. The dream comes true. Today, <strong>FM GROUP World</strong> is still one of the fastest growing Perfume and Cosmetics Merchants in the world!
+        <br /></br />
+        <div style="text-align: center;"><img style="width: 250px;" src="/images/Trawinski Artur.jpg" /> <img style="width: 250px;" src="/images/Trawinski Kasia.jpg" /></div>
+        <br />In February 2010, procedures begin to set up a Branch of the Company in Kuala Lumpur, Malaysia, at the time the fifth Asian country to join FM Group World. Ms Jola and Tom Tomaszewski (Managing Directors) launched <strong>FM Cosmetics Malaysia</strong> on a very special day - February 14, 2012: Valentine\'s Day!
+        <br />In September 2011, Mr Alexander Pogorzelski joins <strong>FM Cosmetics Malaysia</strong> as an Executive Director. <br /><br />
+        <div style="text-align: center;"><img style="width: 250px;" src="/images/IMG_2944.jpg" /> <img style="width: 250px;" src="/images/IMG_3013.jpg" /></div>
+        <br /><br />
+        FM business starts growing. The inhabitants of Klang Valley and other regions of Malaysia are so interested in <strong>Federico Mahora</strong> Product and Business Offer that they start to join FM in masses even before the Branch has been officially launched!
+        <br /><br />
+        <div style="text-align: center;"><img style="width: 400px;" src="/images/Picture2.jpg" /></div>
+        <br /><br />
+        <strong>FM Cosmetics Malaysia Sdn Bhd</strong> started operating with a range of 100 <strong>Federico Mahora</strong> Fragrances, and within a couple of months its offer has been widened by unique cosmetic products, all highest quality and brought to Malaysia directly from Europe. Currently, the Branch has been expanding all over Malaysia, and is being also joined by Distributors from Singapore and Brunei.
+        <br /><br />
+        <strong>FM Cosmetics Malaysia Sdn Bhd</strong> brings to Malaysia a wide range of top quality cosmetic products manufactured in the European Union. Many years of cooperation with one of the top European fragrance creators, <strong>DROM Fragrances International</strong>, have resulted in over 100 different fragrances offered to international FM Distributors at very affordable prices. <strong>Federico Mahora</strong> makeup products have become famous among Malaysian makup artists (Astro, TV3) who recommend using them to TV stars. Numerous <strong>Federico Mahora</strong> products are so innovative and effective that they are definitely going to revolutionize the international cosmetic market.
+        <br />
+        <div style="text-align: center;">
+        <img style="height: 150px;" src="/images/FM313.jpg" />
+        <img style="height: 150px;" src="/images/Natural soap cherry and chocolate.png" /><br />
+        <img style="height: 150px;" src="/images/Mineralne cienie do powiek_FM c003.png" />
+        <img style="height: 150px;" src="/images/B-Glucan_1.png" />
+        </div>
+        '); 
+    break;
+    case 'en2' :  
+        echo ('
+        <p>
         <div style="text-align: center;"><img src="/images/Picture1.jpg" /></div>
 <strong>FM GROUP World</strong> is an international network that has built a reputation as an honest, reliable organization, accredited by the “Better Business Bureau”.
 <br /><br />The Company is known for its quality, diverse selection, impeccable service and affordable product value.
 <br /><br /><strong>Federico Mahora</strong> has proven to be an international success story! <br /><br />
 <div style="text-align: center;"><img style="width: 400px;" src="/images/Picture1_renamed_31095.jpg" /></div><br />
-<strong>FM Cosmetics Malaysia Sdn Bhd</strong> is a part of <strong>FM GROUP World</strong> already operating in over 50 countries. The owners and founders of the Company, Artur and Katarzyna Trawinski have a vision. They want to bring the luxury of designer brands to lives of everyday people, and they want to do it 24 hours a day without any stoppage. The dream comes true. Today, <strong>FM GROUP World</strong> is still one of the fastest growing Perfume and Cosmetics Merchants in the world!
+<strong>FM GROUP Indonesia</strong> is a part of <strong>FM GROUP World</strong> already operating in over 50 countries. The owners and founders of the Company, Artur and Katarzyna Trawinski have a vision. They want to bring the luxury of designer brands to lives of everyday people, and they want to do it 24 hours a day without any stoppage. The dream comes true. Today, <strong>FM GROUP World</strong> is still one of the fastest growing Perfume and Cosmetics Merchants in the world!
 <br /></br />
-<div style="text-align: center;"><img style="width: 250px;" src="/images/Trawinski Artur.jpg" /> <img style="width: 250px;" src="/images/Trawinski Kasia.jpg" /></div>
-<br />In February 2010, procedures begin to set up a Branch of the Company in Kuala Lumpur, Malaysia, at the time the fifth Asian country to join FM Group World. Ms Jola and Tom Tomaszewski (Managing Directors) launched <strong>FM Cosmetics Malaysia</strong> on a very special day - February 14, 2012: Valentine\'s Day!
-<br />In September 2011, Mr Alexander Pogorzelski joins <strong>FM Cosmetics Malaysia</strong> as an Executive Director. <br /><br />
-<div style="text-align: center;"><img style="width: 250px;" src="/images/IMG_2944.jpg" /> <img style="width: 250px;" src="/images/IMG_3013.jpg" /></div>
-<br /><br />
-FM business starts growing. The inhabitants of Klang Valley and other regions of Malaysia are so interested in <strong>Federico Mahora</strong> Product and Business Offer that they start to join FM in masses even before the Branch has been officially launched!
-<br /><br />
-<div style="text-align: center;"><img style="width: 400px;" src="/images/Picture2.jpg" /></div>
-<br /><br />
-<strong>FM Cosmetics Malaysia Sdn Bhd</strong> started operating with a range of 100 <strong>Federico Mahora</strong> Fragrances, and within a couple of months its offer has been widened by unique cosmetic products, all highest quality and brought to Malaysia directly from Europe. Currently, the Branch has been expanding all over Malaysia, and is being also joined by Distributors from Singapore and Brunei.
-<br /><br />
-<strong>FM Cosmetics Malaysia Sdn Bhd</strong> brings to Malaysia a wide range of top quality cosmetic products manufactured in the European Union. Many years of cooperation with one of the top European fragrance creators, <strong>DROM Fragrances International</strong>, have resulted in over 100 different fragrances offered to international FM Distributors at very affordable prices. <strong>Federico Mahora</strong> makeup products have become famous among Malaysian makup artists (Astro, TV3) who recommend using them to TV stars. Numerous <strong>Federico Mahora</strong> products are so innovative and effective that they are definitely going to revolutionize the international cosmetic market.
-<br />
-<div style="text-align: center;">
-<img style="height: 150px;" src="/images/FM313.jpg" />
-<img style="height: 150px;" src="/images/Natural soap cherry and chocolate.png" /><br />
-<img style="height: 150px;" src="/images/Mineralne cienie do powiek_FM c003.png" />
-<img style="height: 150px;" src="/images/B-Glucan_1.png" />
-</div>
 '); 
-
     break;    
     
     default : echo ('

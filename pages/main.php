@@ -8,7 +8,8 @@
                         switch($_SESSION['lang'])
                         {
                             case 'ru' : echo '<h4>FM Group - дополнительная работа для Вас</h4>'; break;
-                            case 'en' : echo '<h4>FM Group- additional income for you</h4>'; break;
+                            case 'en' :
+                            case 'en2' :  echo '<h4>FM Group- additional income for you</h4>'; break;
                             default : echo '<h4>FM Group - praca dodatkowa dla Ciebie</h4>';
                         }
                     ?>
@@ -23,6 +24,7 @@
                                     </p>';
                                 break;
                             case 'en' : 
+                            case 'en2' : 
 
                                 echo '<p>
                                         If you decide to start the co operation, please read the <a href="'.$host.'/regulamin.html">regulations for FM Group</a> members and complete the <a href="'.$host.'/rejestracja.html">registration form</a> – <b>perfumes FM</b>
@@ -45,7 +47,8 @@
                         switch($_SESSION['lang'])
                         {
                             case 'ru' : echo '<a  style="color: #005ede" href="'.$host.'/dlaczegowarto.html"><h1><span  style="color: #005ede">Почему стоит?</span></h1></a>'; break;
-                            case 'en' : echo '<a  style="color: #005ede" href="'.$host.'/dlaczegowarto.html"><h1><span style="color: #005ede">Why is it worth?</span></h1></a>'; break;
+                            case 'en' :
+                            case 'en2' :  echo '<a  style="color: #005ede" href="'.$host.'/dlaczegowarto.html"><h1><span style="color: #005ede">Why is it worth?</span></h1></a>'; break;
                             default : echo '<a style="color: #005ede" href="'.$host.'/dlaczegowarto.html"><h1><span style="color: #005ede">Dlaczego warto?</span></h1></a>';
                         }
                     ?>
@@ -54,12 +57,15 @@
                         switch($_SESSION['lang'])
                         {
                             case 'ru' : echo '<p class="w">Предлагаем помощь:</p>'; break;
-                            case 'en' : echo '<p class="w">We propose the assistance :</p>'; break;
+                            case 'en' :
+                            case 'en2' :  echo '<p class="w">We propose the assistance :</p>'; break;
                             default : echo '<p class="w">Oferujemy pomoc:</p>';
                         }
                     ?>
 
-                    
+                    <?php if($_SESSION['lang'] == 'pl'): ?>
+                        <a target="_blank" class="btn_aurile" href="http://www.aurile.pl/ "></a>
+                    <?php endif; ?>
 
                     
 
@@ -69,7 +75,8 @@
                         switch($_SESSION['lang'])
                         {
                             case 'ru' : echo '<li>Для физических лиц</li>'; break;
-                            case 'en' : echo '<li>For individuals</li>'; break;
+                            case 'en' :
+                            case 'en2' :  echo '<li>For individuals</li>'; break;
                             default : echo '<li>Dla osób prywatnych</li>';
                         }
                         ?>
@@ -77,7 +84,8 @@
                         switch($_SESSION['lang'])
                         {
                             case 'ru' : echo '<li>Для людей в отрасли'; break;
-                            case 'en' : echo '<li>For persons from the sectors</li>'; break;
+                            case 'en' :
+                            case 'en2' :  echo '<li>For persons from the sectors</li>'; break;
                             default : echo '<li>Dla osób w branży';
                         }
                         ?>
@@ -99,7 +107,8 @@
                             </ul>
                             ';
                             break;
-                            case 'en' : echo '
+                            case 'en' :
+                            case 'en2' :  echo '
                             <ul>
 
                                 <li><a href="'.$host.'/solaria.html">Hairdressing</a></li>
@@ -121,6 +130,8 @@
                                 <li><a href="'.$host.'/solaria.html">Kosmetyki</a></li>
 
                                 <li><a href="'.$host.'/solaria.html">Solaria</a></li>
+
+                                <li><a href="'.$host.'/solaria.html">Kawiarnie, restauracje</a></li>
 
                                 <li><a href="'.$host.'/solaria.html">itd.</a></li>
 
@@ -157,7 +168,8 @@
 
 
                             '; break;
-                            case 'en' : echo '
+                            case 'en' :
+                            case 'en2' :  echo '
 
                                 The cooperation with us- is the best form of <b>the additional income</b>. None of  companies in the world can propose you such great  opportunity. <br />
 
@@ -194,7 +206,8 @@
                         switch($_SESSION['lang'])
                         {
                             case 'ru' : echo '<p class="w">Оставь нам свой номер телефона или адрес электронной почты</p>'; break;
-                            case 'en' : echo '<p class="w">Leave your mail address here </p>'; break;
+                            case 'en' :
+                            case 'en2' :  echo '<p class="w">Leave your mail address here </p>'; break;
                             default : echo '<p class="w">Zostaw swój numer telefonu lub email</p>';
                         }
                         ?>
@@ -210,7 +223,8 @@
                         switch($_SESSION['lang'])
                         {
                             case 'ru' : echo '<p class="w">Образцы каталогов  <span>товаров</span></p>'; break;
-                            case 'en' : echo '<p class="w">Samples of <span>catalogues</span></p>'; break;
+                            case 'en' :
+                            case 'en2' :  echo '<p class="w">Samples of <span>catalogues</span></p>'; break;
                             default : echo '<p class="w">Przykładowe katalogi <span>Produktów</span></p>';
                         }
                         ?>
@@ -232,7 +246,8 @@
                         switch($_SESSION['lang'])
                         {
                             case 'ru' : echo 'скачать pdf'; break;
-                            case 'en' : echo 'download pdf'; break;
+                            case 'en' :
+                            case 'en2' :  echo 'download pdf'; break;
                             default : echo 'pobierz pdf';
                         }
                         ?>                                                
@@ -243,7 +258,8 @@
                         switch($_SESSION['lang'])
                         {
                             case 'ru' : echo 'скачать pdf'; break;
-                            case 'en' : echo 'download pdf'; break;
+                            case 'en' :
+                            case 'en2' :  echo 'download pdf'; break;
                             default : echo 'pobierz pdf';
                         }
                         ?>  
@@ -255,6 +271,15 @@
                             download pdf                                 
                             </a>
                             <a href="<?php echo $host ?>/katalogi.html" style="margin-left: 35px;" class="cat2_en cat_left">
+                            download pdf                                
+                            </a>
+                        <?php endif; ?>
+
+                        <?php if($_SESSION['lang'] == 'en2'): ?>
+                            <a href="<?php echo $host ?>/katalogi.html" style="margin-left: 35px;" class="cat1_en2 cat_left">
+                            download pdf                                 
+                            </a>
+                            <a href="<?php echo $host ?>/katalogi.html" style="margin-left: 35px;" class="cat2_en2 cat_left">
                             download pdf                                
                             </a>
                         <?php endif; ?>

@@ -23,7 +23,8 @@
     switch($_SESSION['lang'])
     {
         case 'ru' : echo '<h1>Образцы каталогов <br /><span>товаров</span></h1>'; break;
-        case 'en' : echo '<h1>Samples of <br /> <span>catalogues</span></h1>'; break;
+        case 'en' :
+        case 'en2' :  echo '<h1>Samples of <br /> <span>catalogues</span></h1>'; break;
         default : echo '<h1>Przykładowe katalogi <span>Produktów</span></h1>';
     }
     ?>
@@ -55,6 +56,15 @@
         download pdf                               
         </a>
         <a href="<?php echo $host ?>/katalogi.html" style="" class="cat2_en cat_center">
+        download pdf                                 
+        </a>
+    <?php endif; ?>
+
+    <?php if($_SESSION['lang'] == 'en2'): ?>
+        <a href="<?php echo $host ?>/katalogi.html" style="" class="cat1_en2 cat_center">
+        download pdf                               
+        </a>
+        <a href="<?php echo $host ?>/katalogi.html" style="" class="cat2_en2 cat_center">
         download pdf                                 
         </a>
     <?php endif; ?>

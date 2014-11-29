@@ -7,7 +7,8 @@
             switch($_SESSION['lang'])
             {
                 case 'ru' : echo '<h2>Подтверждение регистрации</h2>'; break;
-                case 'en' : echo '<h2>Confirmation of registration</h2>'; break;
+                case 'en' :
+                case 'en2' :  echo '<h2>Confirmation of registration</h2>'; break;
                 default : echo '<h2>Potwierdzenie rejestracji</h2>';
             }
         ?>
@@ -97,6 +98,41 @@ I greet and wish you a fruitful cooperation<br />
 FM GROUP Manager<br />
 Paul Sleboda<br />
 <a href="mailto:info@fmcosmetics-malaysia.com">info@fmcosmetics-malaysia.com</a>
+</p>
+
+
+    <?php elseif($_SESSION['lang'] == 'en2'): ?>
+<p>
+Thank You.
+<br /><br />
+Your registration completed successfully!
+<br /><br />
+The application form and your identification number of FM GROUP will be sent to your e-mail address in 2 work days.
+<br /><br />
+Please do not forget to purchase your Starter Kit and to send a xerox copy of your IC (both sides) to FM Cosmetics Indonesia office within 30 days after registration. Failing to do so will result in deleting of your FM ID number from our system.
+<br /><br />
+Check your data - if you find any error please send us an e-mail - <a href="mailto:info@fmworld-indonesia.com">info@fmworld-indonesia.com</a>.
+<br /><br />
+
+        First Name / Nama: <?php echo $_SESSION['name']; ?><br />
+        Last Name / Nama Keluarga: <?php echo $_SESSION['name2']; ?><br />
+        IC No. / No. IC: <?php echo $_SESSION['ic']; ?><br />
+        Your Email: <?php echo $_SESSION['email']; ?><br />
+        Date of Birth / Tarikh Lahir: <?php echo $_SESSION['birth']; ?><br />
+        Address / Alamat: <?php echo $_SESSION['address']; ?><br />
+        Town / City / Bandar: <?php echo $_SESSION['city']; ?><br />
+        Postcode / Poskod: <?php echo $_SESSION['postcode']; ?><br />
+        Country / Negara: <?php echo $_SESSION['country']; ?><br />
+        State: <?php echo $_SESSION['state']; ?><br />
+Mobile Phone / Telefon Bimbit: <?php echo $_SESSION['mobile']; ?><br />
+Phone / Telefon: <?php echo $_SESSION['phone']; ?><br />
+Comments: <?php echo $_SESSION['text']; ?><br />
+
+<br /><br />
+I greet and wish you a fruitful cooperation<br />
+FM GROUP Manager<br />
+Paul Sleboda<br />
+<a href="mailto:info@fmworld-indonesia.com">info@fmworld-indonesia.com</a>
 </p>
     <?php endif; ?>
 

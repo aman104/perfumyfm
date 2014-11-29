@@ -13,7 +13,8 @@ FM Group является компанией прямых продаж, высо
 '); 
     break;
 
-    case 'en' : echo ('
+    case 'en' :
+    case 'en2' :  echo ('
         <h3>Perfumes FM ny Federico Mahora </h3>
         <p>        
 FM Group is a  direct sales company, with perfume products of high quality that introduces a lot of  new  ventures into our lives.  In FM Group, new ideas are  initiated and these ideas are the reason why  the perfumes are created not only  from fresh fragrances, but also from sensual scents.  Rerfand, that is awarded by Pulse of Business and DROM  is the  strategic partner   of FM Group and the producer of all the components of the fragrances. Taking into account the financial results, FM Group is the head of companies that progresses in the most dynamic way. Perfumes of FM Group are for persons of all ages and that is why everybody can find the fragrance for herself/himself from many proposed ones. We propose to you the  wide range of perfumes from FM brand of  high quality and at the reasonable prices.  All these factors ensure, that our perfumes are perfect in each inch, they pamper everybody’s senses, even  the most demanding clients. 
@@ -47,7 +48,8 @@ FM Group is a  direct sales company, with perfume products of high quality that 
                         switch($_SESSION['lang'])
                         {
                             case 'ru' : echo 'скачать pdf'; break;
-                            case 'en' : echo 'donwload pdf'; break;
+                            case 'en' :
+                            case 'en2' :  echo 'donwload pdf'; break;
                             default : echo 'pobierz pdf';
                         }
                         ?>  
@@ -57,7 +59,8 @@ FM Group is a  direct sales company, with perfume products of high quality that 
                         switch($_SESSION['lang'])
                         {
                             case 'ru' : echo 'скачать pdf'; break;
-                            case 'en' : echo 'donwload pdf'; break;
+                            case 'en' :
+                            case 'en2' :  echo 'donwload pdf'; break;
                             default : echo 'pobierz pdf';
                         }
                         ?>  

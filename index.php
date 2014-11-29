@@ -26,7 +26,8 @@
                     switch($_SESSION['lang'])
                     {
                         case 'ru' : echo '<h1>FM Group - Покупай по оптовых  <span>ценах</span><br />стань дистрибьютором  и  <span>зарабатывай </span> <br /> - дополнительная работа </h1>'; break;
-                        case 'en' : echo '<h1>FM GROUP - Buy at  <span>wholesale</span> price <br /> become the distributor and <span>earn</span> - FM  perfumes'; break;
+                        case 'en' :
+                        case 'en2' : echo '<h1>FM GROUP - Buy at  <span>wholesale</span> price <br /> become the distributor and <span>earn</span> - FM  perfumes'; break;
                         default : echo '<h1>FM Group - Kupuj po cenach <span>hurtowych</span><br />zostań dystrybutorem i <span>zarabiaj</span> - perfumy fm</h1>';
                     }
                 ?>

@@ -21,7 +21,8 @@ switch($_SESSION['lang'])
         <br /><br />
 
 '; break;
-    case 'en' : echo '
+    case 'en' :
+    case 'en2' :  echo '
         <h3>FM GROUP WORLD OF SUCCESS</h3>
         <iframe width="540" height="315" src="http://www.youtube.com/embed/Lufhury7mtQ" frameborder="0" allowfullscreen></iframe>        
         <br /><br />

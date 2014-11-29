@@ -15,7 +15,8 @@ switch($_SESSION['lang'])
 
 '; break;
 
-    case 'en' : echo '
+    case 'en' :
+    case 'en2' :  echo '
 
 <a class="pdf" href="'.$host.'/files/general-terms-amended.pdf"></a>
 

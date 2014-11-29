@@ -21,7 +21,8 @@ switch($_SESSION['lang'])
 
     break;
 
-    case 'en' : echo ('
+    case 'en' :
+    case 'en2' :  echo ('
 <p>
 Combine business with pleasure. Thanks to the co operation with FM GROUP, you can get easy access to wide range of high quality cosmetics for everyday use and you will find something specially for you. You decide what you would like to be involved in and where, independently you create your own career and organize your time.  You get not only a high degree of freedom of development, but also time for you and your family.
 <div style="text-align: center;"><img src="/images/dlaczego.jpg" /></div>
