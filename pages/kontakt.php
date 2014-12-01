@@ -156,7 +156,7 @@
                 </td>
             </tr>
             <tr>
-                <td style="color: black; padding-left: 20px;">
+                <td style="color: black; padding-left: 20px; <?php echo ($_SESSION['lang'] != 'pl') ? 'width: 100%' : ''; ?>">
 					FM GROUP Manager <br />
                     <?php
                     switch($_SESSION['lang'])
@@ -211,16 +211,18 @@
                     <?php endif; ?>
                     
                 </td>
+                <?php  if($_SESSION['lang'] == 'pl'): ?> 
                 <td style="padding-left: 20px;">
-                    <?php  if($_SESSION['lang'] == 'pl'): ?> 
+                    
                     <form action="<?php echo $host;?>/?p=kontakt" method="post">
 
                         <input type="text" name="one_phone" value="wpisz tutaj swój numer telefonu" onfocus="if(this.value=='wpisz tutaj swój numer telefonu') this.value='';" onblur="if(this.value=='') this.value='wpisz tutaj swój numer telefonu';" />
                         
                         <input type="submit" class="send_<?php echo $_SESSION['lang']; ?>" value="" />
                     </form>
-                    <?php endif; ?>
+                    
                 </td>
+                <?php endif; ?>
             </tr>
         </table>
         <?php  if($_SESSION['lang'] == 'ru'): ?>

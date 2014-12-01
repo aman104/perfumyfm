@@ -3,12 +3,7 @@
                 <tr>
                     <td colspan="2">
                         <h3>Complete the registration form</h3>
-
-                        <?php if($_SESSION['lang'] == 'en2'): ?>
-                            <p>(An application for joining the FM GROUP COSMETICS INDONESIA)</p>
-                        <?php else: ?>
-                            <p>(An application for joining the FM GROUP COSMETICS MALAYSIA)</p>
-                        <?php endif; ?>
+                        <p>(An application for joining the FM GROUP COSMETICS MALAYSIA)</p>
                     </td>
                 </tr>
                 <?php if($require_msg['name']): ?>
@@ -158,41 +153,6 @@
                     </td>
                     <td><input name="phone" type="text" value="<?php echo $_POST['phone'] ?>" /></td>
                 </tr>
-
-
-<?php /*
-                <?php if($require_msg['type']): ?>
-                <tr>
-                    <td></td>
-                    <td class="error_td"><?php echo $require_msg['type']; ?></td>
-                </tr>
-                <?php endif; ?>
-                <tr>
-                    <td class="t_right">
-                         Starter Kit for FM Group Premium Members (required)
-                    </td>
-                    <td>
-                        <select id="starterType" name="type">
-
-                                <option value="">Please Select</option>
-                                <option <?php echo ($_POST['type'] == 'Starter kit - RM 55') ? 'selected="selected"' : ''; ?> value="Starter kit - RM 55">Starter kit - RM 55</option>
-                                <option <?php echo ($_POST['type'] == 'Starter kit - RM 199') ? 'selected="selected"' : ''; ?> value="Starter kit - RM 199">Starter kit - RM 199</option>
-
-                        </select>
-                    </td>
-                </tr>
-
-                <tr>
-
-                    <td colspan="2">
-
-                        <strong>Starter kit - RM 199</strong> - the Complete Collection Starter Kit containing everything you need to start developing your FM business. Inside an elegant black case you will find 100 samples of Classic, Luxury, Floral and French FM fragrance collections, 1 perfume and 1 makeup catalogue, 20 business opportunity and catalogue summaries, 1 marketing plan, 1 business overview presentation, FM notebook, FM DVD, car sticker and FM pen.
-                        <br /><br />
-                        <strong>Starter kit - RM 55</strong> - the Mini Collection Starter Kit containing 20 most popular samples of either luxury or classic collection. Inside this smart red case you will also find 1 product catalogue, 10 business opportunity and catalogue summaries, 1 marketing plan, FM DVD and car sticker
-
-                    </td>
-                </tr>
-*/ ?>
                 <?php if($require_msg['text']): ?>
                 <tr>
                     <td></td>
@@ -210,8 +170,8 @@
                 <tr>
                     <td colspan="2">
                         <strong>All orders will be completed after due amount has been credited to FM bank account in MayBank</strong>
-<br /><br />
-After successful registration you must choose and pay for your Starter Kit and provide a copy of your Identity Card.
+                        <br /><br />
+                        After successful registration you must choose and pay for your Starter Kit and provide a copy of your Identity Card.
                     </td>
                 </tr>
                 <tr>

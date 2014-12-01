@@ -53,12 +53,11 @@ W razie pytań proszę dzwonić: +48 507 759 582 <br />
 
         <?php elseif($_SESSION['lang'] == 'ru'): ?>
         <p>
+
+Регистрация завершена<br />
+Спасибо за заполнение формы. Пожалуйста,<br />
+ждите письмо с ссылкой для активации<br />
 Добрый день!
-<br /><br />Огромное спасибо за выполнение формуляра с целью сотрудничества.
-<br /><br />В течении 2 рабочих дней с Вами свяжется сотрудник FM GROUP Россия с целью предоставления р/с, на который необходимо оплатить выбранную папку. Вместе с папкой Вы получите договор, где нужно вписать номер спонсора (получите отдельным мейлом), подписать договор и вклеить номер папки.
-<br /><br />Затем договор нужно выслать меилом на адрес: fmkontrakt@gmail.com. В течении месяца оригинал договора необходимо выслать почтой по адресу: ООО «Федерико Махора»  Россия, 344092, г. Ростов-на-Дону,ул. Капустина, 16.
-<br /><br />
-Благодарю и удачи
 <br /><br />
 FM GROUP Manager<br />
 Павел Шлебода
@@ -102,37 +101,28 @@ Paul Sleboda<br />
 
 
     <?php elseif($_SESSION['lang'] == 'en2'): ?>
+
+
 <p>
-Thank You.
+Terima kasih telah mengirimkan formulir aplikasi Anda ke FM GROUP Indonesia. 
 <br /><br />
-Your registration completed successfully!
+Petugas Customer Care kami akan melakukan evaluasi terhadap data Anda dan akan segera menghubungi Anda untuk mengatur beberapa hal berikut ini: 
 <br /><br />
-The application form and your identification number of FM GROUP will be sent to your e-mail address in 2 work days.
+1. Total jumlah pembayaran dan metode pembayaran Tim kami akan mengkonfirmasi total jumlah pembayaran (berikut ongkos kirim bila ada) dan metode pembayaran yang telah dipilih. Pendaftaran distributor baru akan diproses setelah kami menerima seluruh pembayaran tersebut. 
 <br /><br />
-Please do not forget to purchase your Starter Kit and to send a xerox copy of your IC (both sides) to FM Cosmetics Indonesia office within 30 days after registration. Failing to do so will result in deleting of your FM ID number from our system.
+2. Metode pengambilan Tim kami akan melakukan klarifikasi apakah Anda menginginkan produk untuk dikirim ke alamat Anda atau melakukan pengambilan langsung ke kantor kami (Jakarta/Yogyakarta/Manado). 
 <br /><br />
-Check your data - if you find any error please send us an e-mail - <a href="mailto:info@fmworld-indonesia.com">info@fmworld-indonesia.com</a>.
+3. Kelengkapan data Tim kami akan melakukan klarifikasi terhadap data penting Anda dan akan memberitahukan langkah selanjutnya (setelah pembayaran diproses) untuk secara resmi terdaftar sebagai Distributor FM GROUP. 
 <br /><br />
-
-        First Name / Nama: <?php echo $_SESSION['name']; ?><br />
-        Last Name / Nama Keluarga: <?php echo $_SESSION['name2']; ?><br />
-        IC No. / No. IC: <?php echo $_SESSION['ic']; ?><br />
-        Your Email: <?php echo $_SESSION['email']; ?><br />
-        Date of Birth / Tarikh Lahir: <?php echo $_SESSION['birth']; ?><br />
-        Address / Alamat: <?php echo $_SESSION['address']; ?><br />
-        Town / City / Bandar: <?php echo $_SESSION['city']; ?><br />
-        Postcode / Poskod: <?php echo $_SESSION['postcode']; ?><br />
-        Country / Negara: <?php echo $_SESSION['country']; ?><br />
-        State: <?php echo $_SESSION['state']; ?><br />
-Mobile Phone / Telefon Bimbit: <?php echo $_SESSION['mobile']; ?><br />
-Phone / Telefon: <?php echo $_SESSION['phone']; ?><br />
-Comments: <?php echo $_SESSION['text']; ?><br />
-
+Apabila Anda tidak menerima informasi dari petugas kami dalam waktu 2 hari ke depan, harap hubungi kami langsung di: 
+<br />Telepon : 021-799 25 28 
+<br />Email : customer.care@fmgroup.co.id 
+<br />(harap sertakan nomor formulir aplikasi Anda saat menghubungi kami) 
 <br /><br />
-I greet and wish you a fruitful cooperation<br />
-FM GROUP Manager<br />
-Paul Sleboda<br />
-<a href="mailto:info@fmworld-indonesia.com">info@fmworld-indonesia.com</a>
+Informasi di atas berikut formulir aplikasi telah terkirim otomatis ke alamat email Anda di 
+<br /><br />
+Salam sukses selalu untuk Anda, <br />
+Manajemen FM GROUP Indonesia
 </p>
     <?php endif; ?>
 

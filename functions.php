@@ -340,6 +340,10 @@ function clearPOST($tab)
         {
             $require = array('name','name2', 'ic', 'birth', 'city', 'postcode', 'country', 'state', 'email', 'mobile', 'address');
         }
+        elseif($_SESSION['lang'] == 'en2')
+        {
+            $require = array('name', 'email', 'ktp', 'birth', 'city', 'postcode', 'state', 'email', 'mobile', 'address', 'type');
+        }
         else
         {
             $require = array('name', 'email', 'dataur', 'phone', 'dowod', 'address', 'type', 'payable');
@@ -433,6 +437,21 @@ function clearPOST($tab)
                 Phone / Telefon: '.$_POST['phone'].'<br />
 
                 Comments: '.$_POST['text'].'<br />';
+            }
+            elseif($_SESSION['lang'] == 'en2')
+            {
+                $content = '<p>
+                Nama Lengkap : '.$_POST['name'].'<br />
+                Your Email : '.$_POST['email'].'<br />
+                No. KTP / paspor / kitas: '.$_POST['ktp'].'<br />
+                Tanggal Lahir : '.$_POST['birth'].'<br />
+                Alamat Koresponden: '.$_POST['address'].'<br />
+                Kota - Propinsi : '.$_POST['city'].'<br />
+                Kode Pos: '.$_POST['postcode'].'<br />
+                No.Handphone : '.$_POST['mobile'].'<br />
+                Telp. Rumah / Kantor: '.$_POST['phone'].'<br />
+                Pilihan Paket Joining: '.$_POST['type'].'<br />
+                Catatan/Permintaan Khusus: '.$_POST['text'].'<br />';
             }
 
 
@@ -553,12 +572,10 @@ W razie pytań proszę dzwonić: +48 507 759 582 <br />
                     $title = 'Регистрация FM Group в России';
                     $content2 = '<h2>Подтверждение регистрации</h2><p>
 
+Регистрация завершена<br />
+Спасибо за заполнение формы. Пожалуйста,<br />
+ждите письмо с ссылкой для активации<br />
 Добрый день!
-<br /><br />Огромное спасибо за выполнение формуляра с целью сотрудничества.
-<br /><br />В течении 2 рабочих дней с Вами свяжется сотрудник FM GROUP Россия с целью предоставления р/с, на который необходимо оплатить выбранную папку. Вместе с папкой Вы получите договор, где нужно вписать номер спонсора (получите отдельным мейлом), подписать договор и вклеить номер папки.
-<br /><br />Затем договор нужно выслать меилом на адрес: fmgroup-russia.ru. В течении месяца оригинал договора необходимо выслать почтой по адресу: ООО «Федерико Махора»  Россия, 344092, г. Ростов-на-Дону,ул. Капустина, 16.
-<br /><br />
-Благодарю и удачи
 <br /><br />
 FM GROUP Manager<br />
 Павел Шлебода</p>
@@ -604,36 +621,25 @@ Paul Sleboda<br />
                 {
                                         $title = 'Confirmation of registration';
                     $content2 = '<p>
-Thank You.
+Terima kasih telah mengirimkan formulir aplikasi Anda ke FM GROUP Indonesia. 
 <br /><br />
-Your registration completed successfully!
+Petugas Customer Care kami akan melakukan evaluasi terhadap data Anda dan akan segera menghubungi Anda untuk mengatur beberapa hal berikut ini: 
 <br /><br />
-The application form and your identification number of FM GROUP will be sent to your e-mail address in 2 work days.
+1. Total jumlah pembayaran dan metode pembayaran Tim kami akan mengkonfirmasi total jumlah pembayaran (berikut ongkos kirim bila ada) dan metode pembayaran yang telah dipilih. Pendaftaran distributor baru akan diproses setelah kami menerima seluruh pembayaran tersebut. 
 <br /><br />
-Please do not forget to purchase your Starter Kit and to send a xerox copy of your IC (both sides) to FM Cosmetics Indonesia office within 30 days after registration. Failing to do so will result in deleting of your FM ID number from our system.
+2. Metode pengambilan Tim kami akan melakukan klarifikasi apakah Anda menginginkan produk untuk dikirim ke alamat Anda atau melakukan pengambilan langsung ke kantor kami (Jakarta/Yogyakarta/Manado). 
 <br /><br />
-Check your data - if you find any error please send us an e-mail - <a href="mailto:info@fmworld-indonesia.com">info@fmworld-indonesia.com</a>.
+3. Kelengkapan data Tim kami akan melakukan klarifikasi terhadap data penting Anda dan akan memberitahukan langkah selanjutnya (setelah pembayaran diproses) untuk secara resmi terdaftar sebagai Distributor FM GROUP. 
 <br /><br />
-
-        First Name / Nama: '.$_SESSION['name'].'<br />
-        Last Name / Nama Keluarga: '.$_SESSION['name2'].'<br />
-        IC No. / No. IC: '.$_SESSION['ic'].'<br />
-        Your Email: '.$_SESSION['email'].'<br />
-        Date of Birth / Tarikh Lahir: '.$_SESSION['birth'].'<br />
-        Address / Alamat: '.$_SESSION['address'].'<br />
-        Town / City / Bandar: '.$_SESSION['city'].'<br />
-        Postcode / Poskod: '.$_SESSION['postcode'].'<br />
-        Country / Negara: '.$_SESSION['country'].'<br />
-        State: '.$_SESSION['state'].'<br />
-Mobile Phone / Telefon Bimbit: '.$_SESSION['mobile'].'<br />
-Phone / Telefon: '.$_SESSION['phone'].'<br />
-Comments: '.$_SESSION['text'].'<br />
-
+Apabila Anda tidak menerima informasi dari petugas kami dalam waktu 2 hari ke depan, harap hubungi kami langsung di: 
+<br />Telepon : 021-799 25 28 
+<br />Email : customer.care@fmgroup.co.id 
+<br />(harap sertakan nomor formulir aplikasi Anda saat menghubungi kami) 
 <br /><br />
-I greet and wish you a fruitful cooperation<br />
-FM GROUP Manager<br />
-Paul Sleboda<br />
-<a href="mailto:info@fmworld-indonesia.com">info@fmworld-indonesia.com</a>
+Informasi di atas berikut formulir aplikasi telah terkirim otomatis ke alamat email Anda di 
+<br /><br />
+Salam sukses selalu untuk Anda, <br />
+Manajemen FM GROUP Indonesia
 </p>';
                 }
 

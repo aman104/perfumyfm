@@ -1,14 +1,4 @@
-<strong>Register ON-LINE (An application for joining the FM GROUP INDONESIA)</strong>
-<br /><br />
-Start now your own business without any financial risk, absolute freedom of choice, no commitment, no obligation. Take the first step today.
-<strong>If you want to get somewhere, you first need to get started</strong>
-<br /><br />
-<strong>Free personal website for all our team members, when they make at least 350 personal points every month.</strong>
-<br /><br />
-Please fill the below form <strong>only</strong> if you really want to be a member of FM GROUP, if you are not sure please use the <a title="CONTACT" href="http://www.fmgroup-indonesia.com/contact.html">contact form</a>.
-<br /><br />
-Pilihan Paket Joining *(lihat brosur)
-<br /><br />
+<h3>Starters</h3>
 
 <div style="text-align: center">
 	<a href="/img/en2/joiningpackage.jpg" data-lightbox="image-1" data-title=""><img src="/img/en2/joiningpackage_min.jpg" /></a>
