@@ -197,7 +197,7 @@
                         <select id="starterType" name="type">
                             
                                 <option value="">-- Выбрать --</option>
-                                <option <?php echo ($_POST['type'] == 'Статус клиента') ? 'selected="selected"' : ''; ?> value="Статус клиента">Статус клиента</option>
+                                <option <?php echo ($_POST['type'] == 'статус получателя') ? 'selected="selected"' : ''; ?> value="статус получателя">статус получателя</option>
                                 <option <?php echo ($_POST['type'] == 'Стартовый пакет МИНИ') ? 'selected="selected"' : ''; ?> value="Стартовый пакет МИНИ">Стартовый пакет МИНИ</option>
                                 <option <?php echo ($_POST['type'] == '100') ? 'selected="selected"' : ''; ?> value="100">100</option>
                                 <option <?php echo ($_POST['type'] == '200') ? 'selected="selected"' : ''; ?> value="200">200</option>                               

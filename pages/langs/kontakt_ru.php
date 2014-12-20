@@ -2,8 +2,6 @@
 Адрес: ул. Суздальский Проспект 11д,<br />
 600018 г. Владимир<br />
 Телефон горячей линии: 8 800 200 93 33<br /><br />
-<a href="www.ru.fmworld.com">www.ru.fmworld.com</a><br />
-<a href="www.fmgrussia.com">www.fmgrussia.com</a><br /><br />
 
 <table class="table-contact-ru">
 <tr>
